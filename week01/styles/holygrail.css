@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: lightpink;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-nav {
+    background-color: #bed;
+    /* Same as the main nav for consistency */
+    padding: 1rem;
+    margin-top: 1rem;
+    /* Add spacing between header title and nav */
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "main-nav main-nav"
+        "content sidebar";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
+    height: calc(100vh - 12rem);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-nav {
+    grid-area: main-nav;
+    background-color: #bed;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    grid-area: content;
+    background: royalblue;
+    padding: 1rem;
+}
+
+aside {
+    grid-area: sidebar;
+    background: yellow;
+    padding: 1rem;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+}
