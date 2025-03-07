@@ -30,3 +30,22 @@ footer,
 header {
     text-align: center;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Create 4 equal column tracks */
+    grid-gap: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+    /* Item 1 spans 2 column tracks */
+}

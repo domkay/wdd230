@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+    nav {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav li {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1;
+    }
+
+    .card:first-child {
+        flex: 2;
+    }
+}

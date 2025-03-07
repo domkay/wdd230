@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #8a2be2;
+    --secondary-color: #f0f8ff;
+    --tertiary-color: #000000;
+    --accent-color-1: rgb(255, 250, 205);
+    --accent-color-2: #a52a2a;
+    --accent-color-3: rgba(255, 250, 205, 0.427);
+    --link-color: #007bff;
+    /* A standard blue for links */
+    --link-hover-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-width: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    padding: 2rem;
+}
+
+header span {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: var(--accent-color-1);
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+
+nav li {
+    margin: 0;
+    /* Remove margin to ensure full width */
+    text-align: center;
+    /* Center the text within each li */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding: 8px 12px;
+    /* border-radius: 5px; */
+    display: block;
+    /* Make the anchor fill the entire li */
+    width: 100%;
+    /* Ensure the anchor takes the full width of the li */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav .active {
+    background-color: rgb(234, 212, 12);
+    color: var(--tertiary-color);
+    /* Ensure text color is visible */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    max-width: 930px;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+main h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-content .card {
+    background-color: white;
+    /* Give cards a white background */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+.main-content .card h2 {
+    color: var(--primary-color);
+    /* Heading within cards */
+    background-color: var(--accent-color-1);
+    margin: -20px -20px 20px -20px;
+    /* Extend background to card edges */
+    padding: 15px 20px;
+    /* Add padding for better spacing */
+    font-size: 1.5em;
+    /* Increase font size */
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners at the top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+.main-content .card ul {
+    list-style: none;
+    /* Remove bullet points from lists */
+    padding: 0;
+}
+
+.main-content .card li {
+    margin-bottom: 8px;
+    /* Space between list items */
+}
+
+.main-content .card a {
+    color: var(--link-color);
+    /* Use the new link color */
+    text-decoration: none;
+    font-weight: 500;
+    /* Slightly bolder links */
+}
+
+.main-content .card a:hover {
+    color: var(--link-hover-color);
+    /* Darker link color on hover */
+    text-decoration: underline;
+    /* Underline on hover for clarity */
+}
+
+footer {
+    background-color: var(--accent-color-2);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
