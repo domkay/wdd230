@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #8a2be2;
-    --secondary-color: #f0f8ff;
+    --primary-color: #7821ca;
+    --secondary-color: #ffffff;
     --tertiary-color: #000000;
     --accent-color-1: rgb(255, 250, 205);
     --accent-color-2: #a52a2a;
     --accent-color-3: rgba(255, 250, 205, 0.427);
-    --link-color: #007bff;
+    --link-color: #0654a8;
     /* A standard blue for links */
     --link-hover-color: #0056b3;
     /* Darker blue on hover */
@@ -15,8 +15,8 @@ body {
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    min-width: 100%;
+    margin: 20px;
+    /* min-width: 100%; */
 }
 
 header {
@@ -158,8 +158,13 @@ main h1 {
 }
 
 footer {
-    background-color: var(--accent-color-2);
+    background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px;
     text-align: center;
+}
+
+#currentYear,
+#lastModified {
+    color: var(--secondary-color);
 }
