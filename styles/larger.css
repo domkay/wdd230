@@ -20,6 +20,7 @@
     main {
         display: flex;
         flex-direction: column;
+        max-width: 90%;
     }
 
     .main-content {
@@ -28,9 +29,18 @@
 
     .card {
         flex: 1;
+        /* This is the default flex value */
     }
 
-    .card:first-child {
-        flex: 2;
+    .card.larger {
+        /* Target the larger card specifically */
+        flex: 3;
+        /* Set flex-grow to 3 */
+    }
+
+    .card.smaller {
+        /* Target the smaller card specifically */
+        flex: 1;
+        /* Set flex-grow to 1 */
     }
 }
