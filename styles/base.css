@@ -9,6 +9,16 @@
     /* A standard blue for links */
     --link-hover-color: #0056b3;
     /* Darker blue on hover */
+
+    /* Dark Mode Variables */
+    --dm-bg-color: #121212;
+    --dm-text-color: #eee;
+    --dm-header-bg: #333;
+    --dm-nav-bg: #444;
+    --dm-nav-a-hover: #555;
+    --dm-card-bg: #333;
+    --dm-card-h2-bg: #555;
+    --dm-footer-bg: #333;
 }
 
 body {
@@ -19,6 +29,17 @@ body {
     /* min-width: 100%; */
 }
 
+.darkMode {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+body.dark-mode {
+    background-color: var(--dm-bg-color);
+    color: var(--dm-text-color);
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -26,6 +47,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+body.dark-mode header {
+    background-color: var(--dm-header-bg);
 }
 
 header img {
@@ -48,6 +73,11 @@ header span {
 
 #menu::before {
     content: "≡";
+}
+
+body.dark-mode nav {
+    background-color: var(--dm-nav-bg);
+    color: #eee;
 }
 
 nav {
@@ -87,10 +117,20 @@ nav a {
     transition: 0.9s;
 }
 
+body.dark-mode nav a {
+    color: #eee;
+}
+
 nav a:hover,
 nav a:active {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a:active {
+    background-color: var(--dm-nav-a-hover);
+    color: var(--dm-text-color);
 }
 
 nav .active {
@@ -124,6 +164,10 @@ main h1 {
     text-align: center;
 }
 
+body.dark-mode main h1 {
+    color: #ffffff;
+}
+
 .main-content {
     padding: 20px;
     display: flex;
@@ -131,57 +175,53 @@ main h1 {
     gap: 20px;
 }
 
+body.dark-mode .main-content .card {
+    background-color: var(--dm-card-bg);
+    color: #eee;
+}
+
 .main-content .card {
     background-color: white;
-    /* Give cards a white background */
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow */
 }
 
 .main-content .card h2 {
     color: var(--primary-color);
-    /* Heading within cards */
     background-color: var(--accent-color-1);
     margin: -20px -20px 20px -20px;
-    /* Extend background to card edges */
     padding: 15px 20px;
-    /* Add padding for better spacing */
     font-size: 1.5em;
-    /* Increase font size */
     text-align: center;
     border-radius: 8px 8px 0 0;
-    /* Rounded corners at the top */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow */
+}
+
+body.dark-mode .main-content .card h2 {
+    background-color: var(--dm-card-h2-bg);
+    color: #eee;
 }
 
 .main-content .card ul {
     list-style: none;
-    /* Remove bullet points from lists */
     padding: 0;
 }
 
 .main-content .card li {
     margin-bottom: 8px;
-    /* Space between list items */
 }
 
 .main-content .card a {
     color: var(--link-color);
-    /* Use the new link color */
     text-decoration: none;
     font-weight: 500;
-    /* Slightly bolder links */
 }
 
 .main-content .card a:hover {
     color: var(--link-hover-color);
-    /* Darker link color on hover */
     text-decoration: underline;
-    /* Underline on hover for clarity */
 }
 
 footer {
@@ -189,6 +229,10 @@ footer {
     color: var(--secondary-color);
     padding: 20px;
     text-align: center;
+}
+
+body.dark-mode footer {
+    background-color: var(--dm-footer-bg);
 }
 
 #currentYear,
