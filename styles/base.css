@@ -6,9 +6,7 @@
     --accent-color-2: #a52a2a;
     --accent-color-3: rgba(255, 250, 205, 0.427);
     --link-color: #0654a8;
-    /* A standard blue for links */
     --link-hover-color: #0056b3;
-    /* Darker blue on hover */
 
     /* Dark Mode Variables */
     --dm-bg-color: #121212;
@@ -21,12 +19,12 @@
     --dm-footer-bg: #333;
 }
 
+/* General Styles */
 body {
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     font-family: 'Roboto', sans-serif;
     margin: 20px;
-    /* min-width: 100%; */
 }
 
 .darkMode {
@@ -40,6 +38,7 @@ body.dark-mode {
     color: var(--dm-text-color);
 }
 
+/* Header Styles */
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -61,6 +60,7 @@ header span {
     font-size: 1.5em;
 }
 
+/* Navigation Styles */
 #menu {
     display: block;
     font-size: 2rem;
@@ -69,15 +69,15 @@ header span {
     padding: .5rem .75rem;
     background-color: #eee;
     color: #000;
+    text-align: right;
 }
 
 #menu::before {
     content: "≡";
 }
 
-body.dark-mode nav {
-    background-color: var(--dm-nav-bg);
-    color: #eee;
+#menu.show::before {
+    content: "X";
 }
 
 nav {
@@ -86,39 +86,35 @@ nav {
     overflow: hidden;
 }
 
+body.dark-mode nav {
+    background-color: var(--dm-nav-bg);
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    /* width: 100%; */
 }
 
 nav ul li {
     display: none;
     margin: 0;
-    /* Remove margin to ensure full width */
     text-align: center;
-    /* Center the text within each li */
     box-sizing: border-box;
-    /* Ensure padding and border are included in the width */
 }
 
 nav a {
     text-decoration: none;
     color: var(--tertiary-color);
     padding: 8px 12px;
-    /* border-radius: 5px; */
     display: block;
-    /* Make the anchor fill the entire li */
     width: 100%;
-    /* Ensure the anchor takes the full width of the li */
     box-sizing: border-box;
-    /* Ensure padding and border are included in the width */
     transition: 0.9s;
 }
 
 body.dark-mode nav a {
-    color: #eee;
+    color: var(--dm-text-color);
 }
 
 nav a:hover,
@@ -136,21 +132,13 @@ body.dark-mode nav a:active {
 nav .active {
     background-color: rgb(234, 212, 12);
     color: var(--tertiary-color);
-    /* Ensure text color is visible */
 }
 
 .show li {
     display: block;
 }
 
-#menu.show::before {
-    content: "X";
-}
-
-#menu {
-    text-align: right;
-}
-
+/* Main Content Styles */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -165,7 +153,7 @@ main h1 {
 }
 
 body.dark-mode main h1 {
-    color: #ffffff;
+    color: var(--dm-text-color);
 }
 
 .main-content {
@@ -175,17 +163,17 @@ body.dark-mode main h1 {
     gap: 20px;
 }
 
-body.dark-mode .main-content .card {
-    background-color: var(--dm-card-bg);
-    color: #eee;
-}
-
 .main-content .card {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .main-content .card {
+    background-color: var(--dm-card-bg);
+    color: var(--dm-text-color);
 }
 
 .main-content .card h2 {
@@ -201,7 +189,7 @@ body.dark-mode .main-content .card {
 
 body.dark-mode .main-content .card h2 {
     background-color: var(--dm-card-h2-bg);
-    color: #eee;
+    color: var(--dm-text-color);
 }
 
 .main-content .card ul {
@@ -224,6 +212,7 @@ body.dark-mode .main-content .card h2 {
     text-decoration: underline;
 }
 
+/* Footer Styles */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
