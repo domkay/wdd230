@@ -36,6 +36,20 @@ header span {
     font-size: 1.5em;
 }
 
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
 nav {
     background-color: var(--accent-color-1);
     padding: 0;
@@ -49,7 +63,8 @@ nav ul {
     /* width: 100%; */
 }
 
-nav li {
+nav ul li {
+    display: none;
     margin: 0;
     /* Remove margin to ensure full width */
     text-align: center;
@@ -69,9 +84,11 @@ nav a {
     /* Ensure the anchor takes the full width of the li */
     box-sizing: border-box;
     /* Ensure padding and border are included in the width */
+    transition: 0.9s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -80,6 +97,18 @@ nav .active {
     background-color: rgb(234, 212, 12);
     color: var(--tertiary-color);
     /* Ensure text color is visible */
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+#menu {
+    text-align: right;
 }
 
 main {
