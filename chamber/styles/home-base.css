@@ -1,0 +1,121 @@
+/* Main Container */
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 20px 0;
+    overflow: hidden;
+    /* Prevent image from overflowing */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Adjust as needed */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    /* Center the image */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    /* Adjust width as needed */
+    max-width: 600px;
+    /* Prevent content from being too wide */
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color-2);
+}
+
+/*Weather-Event design*/
+.weather-event {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.weather-current {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.weather-current h3,
+.weather-event h3 {
+    background-color: var(--accent-color-1);
+    color: var(--tertiary-color);
+    margin-top: 0;
+}
+
+/*Card design*/
+
+.card {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+@media (max-width: 590px) {
+    .hero-content {
+        width: 95%;
+        /* Increase width for very small screens */
+        padding: 10px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+        /* Reduce font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1em;
+        /* Reduce font size for smaller screens */
+    }
+
+    .cta-button {
+        font-size: 1em;
+        /* Reduce button font size for smaller screens */
+        padding: 8px 16px;
+        /* Adjust button padding for smaller screens */
+    }
+}
