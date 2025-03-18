@@ -84,6 +84,7 @@ main {
     background-color: var(--accent-color-1);
     color: var(--tertiary-color);
     margin-top: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 /*Card design*/
@@ -92,6 +93,24 @@ main {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin: 10px;
+}
+
+.card p {
+    padding: .5px;
+}
+
+.card button {
+    margin-bottom: 10px;
+    border: none;
+    background: none;
+    background-color: transparent;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    color: var(--primary-color);
 }
 
 @media (max-width: 590px) {

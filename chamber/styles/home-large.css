@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .weather {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .weather-event {
+        flex-grow: 75;
+    }
+
+    .weather-current {
+        flex-grow: 25;
+    }
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(auto, max-content);
+    }
+}
