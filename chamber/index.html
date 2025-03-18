@@ -9,47 +9,53 @@
         content="Home page of the Commerce Chamber website, providing business listings and information.">
     <meta name="author" content="Madji Kayombo">
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Commerce Chamber of Kinshasa - Home">
     <meta property="og:description"
         content="Directory page for the Commerce Chamber website, providing business listings and information.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/kinshasa.webp">
-    <meta property="og:url" content="/wdd230/chmaber/index.html">
+    <meta property="og:url" content="/wdd230/chamber/index.html">
     <meta property="og:image:alt" content="Image representing the directory page of the Commerce Chamber of Kinshasa">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/headerfooter.css">
     <link rel="stylesheet" href="styles/home_main.css">
+
+    <!-- Scripts -->
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <div class="entete">
-            <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
-            <h1>Kinshasa Chamber of Commerce</h1>
-            <button id="myButton"></button>
-        </div>
-        <nav class="menuAnime">
-            <ul class="menuLinks_ul">
-                <li><a href="index.html" class="currentPage">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
+        <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
+        <h1>Kinshasa Chamber of Commerce</h1>
     </header>
-
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul class="menuLinks_ul_">
+            <li><a href="index.html" class="currentPage">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
@@ -61,7 +67,8 @@
                 <a href="join.html" class="cta-button">Join Us Today!</a>
             </div>
         </section>
-        <!-- Weather Widget -->
+
+        <!-- Weather Section -->
         <section class="weather">
             <div class="weather-event">
                 <h3>Event</h3>
@@ -78,12 +85,12 @@
         <!-- Spotlight Section -->
         <section class="spotlight">
             <div id="spotlight-container">
-                <!-- Companies will be dynamically loaded here from members.json -->
                 <p>Loading spotlight businesses...</p>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <section class="footer_contact">
             <h3>Contact Us</h3>
@@ -112,6 +119,7 @@
             </ul>
         </section>
         <section class="footer_about">
+            <h3>Copyright</h3>
             <p>&copy; <span id="currentYear"></span> Madji Kayombo - Kinshasa Chamber of Commerce</p>
             <p>Madji Kayombo Ngoie, WDD 230 Project</p>
             <p id="lastModified">This page was last modified on: <span id="last-modified"></span></p>

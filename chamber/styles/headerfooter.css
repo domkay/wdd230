@@ -1,0 +1,162 @@
+/* Color Palette */
+:root {
+    --primary-color: #5a189a;
+    /* Darker Purple (Primary Color) */
+    --secondary-color: #ffffff;
+    /* White (Secondary Color) */
+    --tertiary-color: #333333;
+    /* Dark Gray (Text Color) */
+    --accent-color-1: #ffd166;
+    /* Golden Yellow (Accent Color 1) */
+    --accent-color-2: #ef476f;
+    /* Coral Pink (Accent Color 2) */
+    --background-color: #f8f9fa;
+    /* Light Gray (Background Color) */
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--tertiary-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation Styles */
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--accent-color-1);
+    color: var(--tertiary-color);
+    text-align: right;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav {
+    background-color: var(--accent-color-1);
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: none;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding: 8px 12px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.9s;
+}
+
+a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav a:hover,
+nav a:active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav .active {
+    background-color: rgb(234, 212, 12);
+    color: var(--tertiary-color);
+}
+
+.show li {
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--accent-color-1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer_contact,
+.footer_social,
+.footer_about {
+    margin-bottom: 20px;
+}
+
+.footer_social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_social img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer Layout Improvement */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer section {
+    margin: 10px;
+}
+
+.footer_social ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

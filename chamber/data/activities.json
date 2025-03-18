@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Kinshasa National Museum",
+        "image": "images/musee.webp",
+        "address": "Boulevard Triomphal, Kinshasa",
+        "description": "Explore the rich cultural heritage of the Democratic Republic of Congo at this iconic museum."
+    },
+    {
+        "title": "Marché de la Liberté",
+        "image": "images/market_cropped.webp",
+        "address": "456 Market Street, Kinshasa",
+        "description": "A bustling market offering a variety of local goods, crafts, and fresh produce."
+    },
+    {
+        "title": "Lola Ya Bonobo Sanctuary",
+        "image": "images/lola_cropped.webp",
+        "address": "Petites Chutes des Lukaya, Kinshasa",
+        "description": "A sanctuary dedicated to the protection and rehabilitation of bonobos, a rare primate species."
+    },
+    {
+        "title": "Kinshasa Botanical Garden",
+        "image": "images/botanicresized.webp",
+        "address": "Avenue Kasa-Vubu, Kinshasa",
+        "description": "A serene escape featuring a diverse collection of plants and flowers native to the region."
+    },
+    {
+        "title": "Stade des Martyrs",
+        "image": "images/stade_cropped.webp",
+        "address": "Boulevard Triomphal, Kinshasa",
+        "description": "One of the largest stadiums in Africa, hosting major sports events and concerts."
+    },
+    {
+        "title": "Kingakati valley",
+        "image": "images/kingakati2_cropped.webp",
+        "address": "303 Zoo Road, Kinshasa",
+        "description": "Home to a variety of wildlife species, offering an educational experience for visitors."
+    },
+    {
+        "title": "N'Sele River",
+        "image": "images/nsele2_cropped.webp",
+        "address": "Nsele , Kinshasa",
+        "description": "A picturesque river perfect for boat rides and enjoying the natural beauty of Kinshasa."
+    },
+    {
+        "title": "Kinshasa Cultural Center",
+        "image": "images/culturel_res.webp",
+        "address": "Aviateurs 66, Gombe, Kinshasa",
+        "description": "A hub for art, music, and cultural events showcasing the vibrant spirit of Kinshasa."
+    }
+]

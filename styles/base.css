@@ -152,7 +152,7 @@ body.dark-mode nav a {
     color: var(--dm-text-color);
 }
 
-body.dark-mode .active {
+body.dark-mode.active {
     color: var(--dm-bg-color);
 }
 
