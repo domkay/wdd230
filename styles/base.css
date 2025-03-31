@@ -177,6 +177,40 @@ nav .active {
     display: block;
 }
 
+
+/*Hero */
+.hero{
+    margin: 10px auto;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background: radial-gradient(#dfd9d9c9, #3206d1); /* Radial Gradient on label */
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: "Great Vibes", serif;
+    color: var(--secondary-color);
+    text-align: center;
+}
 /* Main Content Styles */
 main {
     display: grid;

@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getDates.js" defer></script>
-    <!-- <script src="scripts/overflow.js" defer></script> -->
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/visitcounter.js" defer></script>
 </head>
 
 <body>
@@ -46,6 +46,16 @@
             <li><a href="">Form</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/atlanta-temple-small.webp">
+            <source media="(max-width: 960px)" srcset="images/atlanta-temple-large.webp.webp">
+            <img src="images/atlanta-temple-large.webp" alt="Atlanta Temple" loading="lazy">
+        </picture>
+        <div class="herolabel">
+			<p>Atlanta Temple</p>
+		</div>
+    </div>
     <main>
         <h1>Web Frontend Development - Home</h1>
         <div class="main-content">
@@ -68,9 +78,14 @@
             </section>
             <section class="card smaller">
                 <h2>Information</h2>
+                <p>Visits count: <span id="visitCount">0</span></p>
             </section>
         </div>
     </main>
+    <div style="width: 100%; height: 400px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.848834466952!2d15.322521174154425!3d-4.327583643753556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a359737b819f7%3A0x86720f4f9f73367b!2sKinshasa%2C%20Democratic%20Republic%20of%20the%20Congo!5e0!3m2!1sen!2sus!4v1709462446755!5m2!1sen!2sus"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p>&copy; <span id="currentYear"></span>, Madji Kayombo Ngoie, Dem. Republic of Congo</p>
         <p id="lastModified"></p>
