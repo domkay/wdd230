@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 :root {
     --primary-color: #7821ca;
     --secondary-color: #ffffff;
@@ -187,7 +188,7 @@ nav .active {
     position: absolute;
     top: 30px;
     left: 50px;
-    background: radial-gradient(#dfd9d9c9, #3206d1);
+    background: radial-gradient(#dfd9d9c9, #15005f);
     border: 1px solid rgba(0, 0, 0, 0.15);
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
