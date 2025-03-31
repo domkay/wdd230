@@ -40,7 +40,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Changed to space-between */
 }
 
 body.dark-mode header {
@@ -59,40 +58,34 @@ header span {
     background-color: #eee;
     color: #333;
     border: 2px solid #ccc;
-    /* Added border */
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    /* Added border-color transition */
 }
 
 .darkMode:hover {
     background-color: #ddd;
     border-color: #bbb;
-    /* Slightly darker border on hover */
 }
 
 body.dark-mode .darkMode {
     background-color: #333;
     color: #eee;
     border-color: #555;
-    /* Darker border in dark mode */
 }
 
 body.dark-mode .darkMode:hover {
     background-color: #444;
     border-color: #666;
-    /* Even darker border on hover in dark mode */
 }
 
 body.dark-mode .darkMode::after {
     content: " (Dark Mode On)";
-    /* Added text to indicate dark mode is on */
+    /* Added text to indicate that dark mode is on */
     font-weight: bold;
     margin-left: 5px;
     color: #aaa;
-    /* Slightly subdued color */
 }
 
 /* Navigation Styles */
@@ -194,7 +187,7 @@ nav .active {
     position: absolute;
     top: 30px;
     left: 50px;
-    background: radial-gradient(#dfd9d9c9, #3206d1); /* Radial Gradient on label */
+    background: radial-gradient(#dfd9d9c9, #3206d1);
     border: 1px solid rgba(0, 0, 0, 0.15);
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -283,10 +276,14 @@ body.dark-mode .main-content .card h2 {
 .main-content .card a:hover {
     color: var(--link-hover-color);
     text-decoration: underline;
+    /**/
 }
 
 body.dark-mode .main-content .card a {
     color: var(--dm-text-color);
+}
+.smaller p{
+    text-align: center;
 }
 
 /* Footer Styles */
