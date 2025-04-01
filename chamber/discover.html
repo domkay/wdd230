@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Kinshasa</title>
+    <meta name="description"
+        content="Discover the beauty and culture of Kinshasa through photos and local information.">
+    <meta name="author" content="Madji Kayombo">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
+    <link rel="stylesheet" href="styles/home-base.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- Scripts -->
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
+        <h1>Discover Kinshasa</h1>
+        <a id="menu" href="#"></a>
+    </header>
+
+    <nav class="navigation">
+        <ul class="menuLinks_ul_">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="discover-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="visit-message" id="visitMessage">
+                <!-- Message will be inserted here by JavaScript -->
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Kinshasa at a Glance</h2>
+                <div class="stat-item">
+                    <span class="stat-label">Population:</span>
+                    <span class="stat-value">17 million</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Area:</span>
+                    <span class="stat-value">9,965 km²</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Founded:</span>
+                    <span class="stat-value">1881</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Language:</span>
+                    <span class="stat-value">French, Lingala</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Upcoming Events</h2>
+                <div class="event">
+                    <h3>Kinshasa Cultural Festival</h3>
+                    <p class="event-date">June 15-20, 2025</p>
+                    <p>Experience the rich cultural heritage of Kinshasa through music, danse, and art.</p>
+                </div>
+                <div class="event">
+                    <h3>Business Innovation Summit</h3>
+                    <p class="event-date">July 5-7, 2025</p>
+                    <p>Join industry leaders discussing the future of business in the DRC.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Weather</h2>
+                <div class="stat-item">
+                    <span class="stat-label">Current:</span>
+                    <span class="stat-value">28°C (82°F)</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Humidity:</span>
+                    <span class="stat-value">65%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Forecast:</span>
+                    <span class="stat-value">Sunny</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="photo-gallery">
+            <div class="photo-card">
+                <img src="images/kinshasa-skyline.jpg" loading="lazy" alt="Kinshasa Skyline" width="600" height="400">
+                <div class="photo-caption">
+                    <h3>Kinshasa Skyline</h3>
+                    <p>The modern skyline of Kinshasa featuring the Tour de l'Échangeur and other landmarks.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/congo-river.jpg" loading="lazy" alt="Congo River" width="600" height="400">
+                <div class="photo-caption">
+                    <h3>Congo River</h3>
+                    <p>The mighty Congo River, a vital transportation route and source of life for the city.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/marche-liberte.webp" loading="lazy" alt="Marché de la Liberté" width="600" height="400">
+                <div class="photo-caption">
+                    <h3>Marché de la Liberté</h3>
+                    <p>The bustling Liberté Market, one of Kinshasa's largest and most vibrant markets.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/lola_cropped.webp" loading="lazy" alt="Lola ya Bonobo" width="600" height="400">
+                <div class="photo-caption">
+                    <h3>Lola ya Bonobo</h3>
+                    <p>The world's only sanctuary for orphaned bonobos, located just outside Kinshasa.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/culturel_res.webp" loading="lazy" alt="Académie des Beaux-Arts" width="600" height="400">
+                <div class="photo-caption">
+                    <h3>Académie des Beaux-Arts</h3>
+                    <p>The prestigious art academy that has nurtured generations of Congolese artists.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/ndolo-airport.jpeg" loading="lazy" alt="Ndolo Airport" width="600" height="400">
+                <div class="photo-caption">
+                    <h3>Ndolo Airport</h3>
+                    <p>The city's secondary airport, primarily serving domestic and regional flights.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer_contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@kinshasachamber.com">info@kinshasachamber.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Chamber Street, Kinshasa, DRC</p>
+        </section>
+        <section class="footer_social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_youtube.png" alt="Youtube" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_twitter.png" alt="Twitter" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_linkedin.png" alt="LinkedIn" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer_about">
+            <h3>Copyright</h3>
+            <p>&copy; <span id="currentYear"></span> Madji Kayombo - Kinshasa Chamber of Commerce</p>
+            <p>Madji Kayombo Ngoie, WDD 230 Project</p>
+            <p id="lastModified">This page was last modified on: <span id="last-modified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>
