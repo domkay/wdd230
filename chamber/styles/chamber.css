@@ -199,7 +199,7 @@ main {
 }
 
 /* Button Styles */
-.cta-button, .photo-caption button {
+.cta-button, .photo-caption button, .spotlight .card button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
@@ -207,9 +207,6 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
-}
-
-.cta-button {
     padding: 10px 20px;
     font-size: 1.1em;
 }
@@ -220,7 +217,7 @@ main {
     min-width: 80px;
 }
 
-.cta-button:hover {
+.cta-button:hover, .spotlight .card button:hover, .photo-caption button:hover {
     background-color: var(--accent-color-2);
 }
 
@@ -236,6 +233,27 @@ main {
     color: var(--tertiary-color);
     margin-top: 0;
     border-radius: 5px 5px 0 0;
+}
+
+.spotlight {
+    display: grid;
+    gap: 20px;
+}
+
+.spotlight .card {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.spotlight .card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: 'Lora', serif;
+    border-bottom: 2px solid var(--accent-color-1);
+    padding-bottom: 0.5rem;
 }
 
 /* Discover Page Layout */
@@ -307,7 +325,6 @@ main {
     font-size: 0.9rem;
 }
 
-/* Shared Components */
 .visit-message, .event {
     padding: 1rem;
     margin-bottom: 1rem;
@@ -383,7 +400,9 @@ main {
     .weather-current {
         flex-grow: 25;
     }
-
+    .spotlight {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .discover-container {
         grid-template-columns: 300px 1fr;
     }
@@ -404,7 +423,7 @@ main {
 
 @media (min-width: 1024px) {
     .photo-gallery {
-        grid-template-columns: repeat(2, 1fr); /* two columns in large views */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
