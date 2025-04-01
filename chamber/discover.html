@@ -4,11 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Kinshasa</title>
+    <title>Commerce Chamber of Kinshasa - Discover</title>
     <meta name="description"
         content="Discover the beauty and culture of Kinshasa through photos and local information.">
     <meta name="author" content="Madji Kayombo">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce of Kinshasa - Home">
+    <meta property="og:description"
+        content="Directory page for the Chamber ofCommerce website, providing business listings and information.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.app.goo.gl/BF99UUyP23jQ1vQ5A">
+    <meta property="og:url" content="https://domkay.github.io/wdd230/chamber/index.html">
+    <meta property="og:image:alt" content="Image representing the directory page of the Chamber of Commerce Kinshasa">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +36,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/headerfooter.css">
-    <link rel="stylesheet" href="styles/home-base.css">
-    <link rel="stylesheet" href="styles/home-large.css">
-    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <!-- Scripts -->
     <script src="scripts/hamburger.js" defer></script>
@@ -33,10 +49,9 @@
     <!-- Header -->
     <header>
         <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
-        <h1>Discover Kinshasa</h1>
-        <a id="menu" href="#"></a>
+        <h1>Kinshasa Chamber of Commerce</h1>
     </header>
-
+    <a id="menu" href="#"></a>
     <nav class="navigation">
         <ul class="menuLinks_ul_">
             <li><a href="index.html">Home</a></li>
@@ -75,7 +90,7 @@
             </div>
 
             <div class="sidebar-section">
-                <h2>Upcoming Events</h2>
+                <h2>Discover Kinshasa</h2>
                 <div class="event">
                     <h3>Kinshasa Cultural Festival</h3>
                     <p class="event-date">June 15-20, 2025</p>
@@ -106,52 +121,91 @@
         </aside>
 
         <!-- Main Content -->
-        <div class="photo-gallery">
-            <div class="photo-card">
-                <img src="images/kinshasa-skyline.jpg" loading="lazy" alt="Kinshasa Skyline" width="600" height="400">
-                <div class="photo-caption">
-                    <h3>Kinshasa Skyline</h3>
-                    <p>The modern skyline of Kinshasa featuring the Tour de l'Échangeur and other landmarks.</p>
-                </div>
-            </div>
+        <div class="places">
+            <h2>Places to visit</h2>
+            <div class="photo-gallery">
 
-            <div class="photo-card">
-                <img src="images/congo-river.jpg" loading="lazy" alt="Congo River" width="600" height="400">
-                <div class="photo-caption">
-                    <h3>Congo River</h3>
-                    <p>The mighty Congo River, a vital transportation route and source of life for the city.</p>
+                <div class="photo-card">
+                    <img src="images/musee.webp" loading="lazy" alt="Kinshasa Museum">
+                    <div class="photo-caption">
+                        <h3>Kinshasa National Museum</h3>
+                        <address class="act-address">Boulevard Triomphal, Kinshasa.</address>
+                        <p>Explore the rich cultural heritage of the Democratic Republic of Congo at this iconic museum.
+                        </p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="photo-card">
-                <img src="images/marche-liberte.webp" loading="lazy" alt="Marché de la Liberté" width="600" height="400">
-                <div class="photo-caption">
-                    <h3>Marché de la Liberté</h3>
-                    <p>The bustling Liberté Market, one of Kinshasa's largest and most vibrant markets.</p>
+                <div class="photo-card">
+                    <img src="images/market_cropped.webp" loading="lazy" alt="Marché de la Liberté">
+                    <div class="photo-caption">
+                        <h3>Marché de la Liberté</h3>
+                        <address class="act-address">456 Market Street, Kinshasa.</address>
+                        <p>A bustling market offering a variety of local goods, crafts, and fresh produce.</p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="photo-card">
-                <img src="images/lola_cropped.webp" loading="lazy" alt="Lola ya Bonobo" width="600" height="400">
-                <div class="photo-caption">
-                    <h3>Lola ya Bonobo</h3>
-                    <p>The world's only sanctuary for orphaned bonobos, located just outside Kinshasa.</p>
+                <div class="photo-card">
+                    <img src="images/lola_cropped.webp" loading="lazy" alt="Kinshasa Skyline">
+                    <div class="photo-caption">
+                        <h3>Lola Ya Bonobo Sanctuary</h3>
+                        <address class="act-address">Petites Chutes des Lukaya, Kinshasa.</address>
+                        <p>A sanctuary dedicated to the protection and rehabilitation of bonobos, a rare primate
+                            species.</p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="photo-card">
-                <img src="images/culturel_res.webp" loading="lazy" alt="Académie des Beaux-Arts" width="600" height="400">
-                <div class="photo-caption">
-                    <h3>Académie des Beaux-Arts</h3>
-                    <p>The prestigious art academy that has nurtured generations of Congolese artists.</p>
+                <div class="photo-card">
+                    <img src="images/botanicresized.webp" loading="lazy" alt="Kinshasa Botanical Garden">
+                    <div class="photo-caption">
+                        <h3>Kinshasa Botanical Garden</h3>
+                        <address class="act-address">Avenue Kasa-Vubu, Kinshasa.</address>
+                        <p>A serene escape featuring a diverse collection of plants and flowers native to the region.
+                        </p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="photo-card">
-                <img src="images/ndolo-airport.jpeg" loading="lazy" alt="Ndolo Airport" width="600" height="400">
-                <div class="photo-caption">
-                    <h3>Ndolo Airport</h3>
-                    <p>The city's secondary airport, primarily serving domestic and regional flights.</p>
+                <div class="photo-card">
+                    <img src="images/stade_cropped.webp" loading="lazy" alt="Stade des Martyrs">
+                    <div class="photo-caption">
+                        <h3>Stade des Martyrs</h3>
+                        <address class="act-address">Boulevard Triomphal, Kinshasa.</address>
+                        <p>One of the largest stadiums in Africa, hosting major sports events and concerts.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/kingakati2_cropped.webp" loading="lazy" alt="Kingakati valley">
+                    <div class="photo-caption">
+                        <h3>Kingakati valley</h3>
+                        <address class="act-address">303 Zoo Road, Kinshasa</address>
+                        <p>Home to a variety of wildlife species, offering an educational experience for visitors.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/nsele2_cropped.webp" loading="lazy" alt="N'Sele River">
+                    <div class="photo-caption">
+                        <h3>N'Sele River</h3>
+                        <address class="act-address">Nsele , Kinshasa</address>
+                        <p>A picturesque river perfect for boat rides and enjoying the natural beauty of Kinshasa.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/kinshasa-skyline.jpg" loading="lazy" alt="Kinshasa Cultural Center">
+                    <div class="photo-caption">
+                        <h3>Kinshasa Cultural Center</h3>
+                        <address class="act-address">Aviateurs 66, Gombe, Kinshasa</address>
+                        <p>A hub for art, music, and cultural events showcasing the vibrant spirit of Kinshasa.</p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,17 +224,17 @@
             <ul>
                 <li>
                     <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_youtube.png" alt="Youtube" loading="lazy">
+                        <img src="images/icon_youtube.png" alt="Youtube">
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_twitter.png" alt="Twitter" loading="lazy">
+                        <img src="images/icon_twitter.png" alt="Twitter">
                     </a>
                 </li>
                 <li>
                     <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_linkedin.png" alt="LinkedIn" loading="lazy">
+                        <img src="images/icon_linkedin.png" alt="LinkedIn">
                     </a>
                 </li>
             </ul>
