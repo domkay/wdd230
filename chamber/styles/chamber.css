@@ -224,11 +224,6 @@ main {
     background-color: var(--accent-color-2);
 }
 
-.photo-caption button:hover {
-    background-color: var(--accent-color-1);
-    color: var(--tertiary-color);
-}
-
 /* Weather Section */
 .weather-event, .weather-current {
     border: 1px solid var(--primary-color);
@@ -285,11 +280,6 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 100%;
     padding: 5px;
-}
-
-.photo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .photo-card img {
@@ -402,6 +392,14 @@ main {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
     }
+    .photo-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .photo-caption button:hover {
+        background-color: var(--accent-color-1);
+        color: var(--tertiary-color);
+    }
 }
 
 @media (min-width: 1024px) {
@@ -411,20 +409,10 @@ main {
 }
 
 @media (max-width: 590px) {
-    .hero-content {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .hero-content h2 {
-        font-size: 1.5em;
-    }
-
-    .hero-content p, .cta-button {
-        font-size: 1em;
-    }
-
-    .cta-button {
-        padding: 8px 16px;
+    .photo-card:hover, .photo-caption button:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
     }
 }
