@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Kinshasa - Home</title>
+    <meta name="description"
+        content="Home page of the Commerce Chamber website, providing business listings and information.">
+    <meta name="author" content="Madji Kayombo">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce of Kinshasa - Home">
+    <meta property="og:description"
+        content="Directory page for the Chamber ofCommerce website, providing business listings and information.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.app.goo.gl/BF99UUyP23jQ1vQ5A">
+    <meta property="og:url" content="https://domkay.github.io/wdd230/chamber/index.html">
+    <meta property="og:image:alt" content="Image representing the directory page of the Chamber of Commerce Kinshasa">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="styles/headerfooter.css"> -->
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <!-- Scripts -->
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
+        <h1>Kinshasa Chamber of Commerce</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul class="menuLinks_ul_">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main class="join-main">
+        <h1>Chamber of Commerce Membership Application</h1>
+        <div class="container">
+            <form action="thankyou.html" method="get" class="membership-form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">
+                            Applicant's First Name:
+                            <input type="text" id="firstName" name="firstName" required autofocus class="form-input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">
+                            Applicant's Last Name:
+                            <input type="text" id="lastName" name="lastName" required class="form-input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="title" class="form-label">
+                            Applicant's Title/Position:
+                            <input type="text" id="title" name="title" pattern="^[a-zA-Z\s\-]{7,}$"
+                                title="Must contain at least seven letters, spaces, or hyphens." class="form-input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            Email Address:
+                            <input type="email" id="email" name="email" placeholder="youremail@example.com" required
+                                class="form-input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">
+                            Mobile Phone Number:
+                            <input type="tel" id="phone" name="phone" required class="form-input">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organization Information</legend>
+                    <div class="form-group">
+                        <label for="businessName" class="form-label">
+                            Business/Organization Name:
+                            <input type="text" id="businessName" name="businessName" required class="form-input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="form-label">
+                            Business/Organization Description:
+                            <textarea id="description" name="description" class="form-textarea"></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div class="form-group">
+                        <label for="membershipLevel" class="form-label">
+                            Select Membership Level:
+                            <select id="membershipLevel" name="membershipLevel" class="form-select">
+                                <option value="NP Membership">NP Membership (Non-Profit - No Fee)</option>
+                                <option value="Bronze Membership">Bronze Membership</option>
+                                <option value="Silver Membership">Silver Membership</option>
+                                <option value="Gold Membership">Gold Membership</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <button type="submit" class="form-submit-button">Submit Membership Application</button>
+            </form>
+
+            <aside class="benefits">
+                <h2 class="benefits-title">Membership Level Benefits</h2>
+                <ul class="benefits-list">
+                    <li><strong>NP Membership (Non-Profit - No Fee)</strong>
+                        <ul>
+                            <li>Listing in our online directory</li>
+                            <li>Access to member-only events</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bronze Membership</strong>
+                        <ul>
+                            <li>All NP Membership benefits</li>
+                            <li>Discounted rates for select training workshops</li>
+                            <li>Networking opportunities</li>
+                        </ul>
+                    </li>
+                    <li><strong>Silver Membership</strong>
+                        <ul>
+                            <li>All Bronze Membership benefits</li>
+                            <li>Enhanced listing in our online directory</li>
+                            <li>Opportunity to host a member spotlight event</li>
+                            <li>Discounts on event sponsorships</li>
+                        </ul>
+                    </li>
+                    <li><strong>Gold Membership</strong>
+                        <ul>
+                            <li>All Silver Membership benefits</li>
+                            <li>Prominent spotlight position on the homepage (rotating)</li>
+                            <li>Complimentary tickets to signature events</li>
+                            <li>Dedicated account manager</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer_contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@kinshasachamber.com">info@kinshasachamber.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Chamber Street, Kinshasa, DRC</p>
+        </section>
+        <section class="footer_social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_youtube.png" alt="Youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_linkedin.png" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer_about">
+            <h3>Copyright</h3>
+            <p>&copy; <span id="currentYear"></span> Madji Kayombo - Kinshasa Chamber of Commerce</p>
+            <p>Madji Kayombo Ngoie, WDD 230 Project</p>
+            <p id="lastModified">This page was last modified on: <span id="last-modified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

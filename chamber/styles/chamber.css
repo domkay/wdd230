@@ -12,6 +12,12 @@
     /* Coral Pink (Accent Color 2) */
     --background-color: #f8f9fa;
     /* Light Gray (Background Color) */
+    --form-border: #ccc;
+    --form-input-border: #ddd;
+    --form-input-focus: #007bff;
+    --button-primary: #007bff;
+    --button-primary-hover: #0056b3;
+    --benefits-background: #f9f9f9;
 }
 
 /* General Styles */
@@ -157,6 +163,14 @@ main {
     margin: 0 auto;
     text-align: center;
 }
+.join-main{
+    display: flex; /* Use flexbox to control alignment of child elements */
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto; /* Center the main block horizontally */
+    align-items: center; /* Center items vertically along the cross-axis */
+    text-align: center; /* Center inline content within main */
+}
 
 /* Hero Section */
 .hero {
@@ -199,7 +213,9 @@ main {
 }
 
 /* Button Styles */
-.cta-button, .photo-caption button, .spotlight .card button {
+.cta-button,
+.photo-caption button,
+.spotlight .card button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
@@ -217,18 +233,22 @@ main {
     min-width: 80px;
 }
 
-.cta-button:hover, .spotlight .card button:hover, .photo-caption button:hover {
+.cta-button:hover,
+.spotlight .card button:hover,
+.photo-caption button:hover {
     background-color: var(--accent-color-2);
 }
 
 /* Weather Section */
-.weather-event, .weather-current {
+.weather-event,
+.weather-current {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin: 10px;
 }
 
-.weather-current h3, .weather-event h3 {
+.weather-current h3,
+.weather-event h3 {
     background-color: var(--accent-color-1);
     color: var(--tertiary-color);
     margin-top: 0;
@@ -267,7 +287,8 @@ main {
 }
 
 /* Sidebar & Card Shared Styles */
-.sidebar, .photo-card {
+.sidebar,
+.photo-card {
     background-color: var(--secondary-color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -277,7 +298,8 @@ main {
     padding: 1.5rem;
 }
 
-.sidebar h2, .places h2 {
+.sidebar h2,
+.places h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-family: 'Lora', serif;
@@ -325,7 +347,8 @@ main {
     font-size: 0.9rem;
 }
 
-.visit-message, .event {
+.visit-message,
+.event {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 4px;
@@ -370,6 +393,116 @@ main {
     font-style: italic;
 }
 
+/*Join page style*/
+.container {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    gap: 40px;
+}
+.container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.membership-form {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid var(--form-border);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    /* max-width: 768px; */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border: 1px solid var(--form-input-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--form-input-focus);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-submit-button {
+    background-color: var(--button-primary);
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-button:hover {
+    background-color: var(--button-primary-hover);
+}
+
+/* Benefits Styles */
+.benefits {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid var(--form-border);
+    border-radius: 5px;
+    background-color: var(--benefits-background);
+    justify-content: center;
+}
+
+.benefits-title {
+    color: var(--primary-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.benefits-list li {
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+
+.benefits-list strong {
+    color: var(--primary-color);
+    list-style: none;
+}
+
+
 /* Responsive Layouts */
 @media (min-width: 768px) {
     nav ul {
@@ -400,9 +533,11 @@ main {
     .weather-current {
         flex-grow: 25;
     }
+
     .spotlight {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .discover-container {
         grid-template-columns: 300px 1fr;
     }
@@ -411,10 +546,12 @@ main {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
     }
+
     .photo-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
+
     .photo-caption button:hover {
         background-color: var(--accent-color-1);
         color: var(--tertiary-color);
@@ -428,10 +565,21 @@ main {
 }
 
 @media (max-width: 590px) {
-    .photo-card:hover, .photo-caption button:hover {
+
+    .photo-card:hover,
+    .photo-caption button:hover {
         transform: none;
         box-shadow: none;
         background-color: var(--primary-color);
         color: var(--secondary-color);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .benefits {
+        margin-top: 20px;
     }
 }
