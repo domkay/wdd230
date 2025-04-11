@@ -454,7 +454,7 @@ main {
 }
 
 .form-submit-button {
-    background-color: var(--button-primary);
+    background-color: #0056b3;
     color: var(--secondary-color);
     padding: 10px 15px;
     border: none;
