@@ -62,6 +62,10 @@
           {
             "url": "week05/new-ward-members.json",
             "title": "New Ward Members JSON"
+          },
+          {
+            "url": "chamber/directory.html",
+            "title": "Chamber Directory Page"
           }
         ]
       }
