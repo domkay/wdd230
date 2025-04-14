@@ -1,0 +1,144 @@
+{
+    "families": [
+      {
+        "familyName": "Mukendi",
+        "moveInDate": "2022-03-15",
+        "memberCount": 4,
+        "visitedByBishopric": true,
+        "members": [
+          {
+            "name": "Papa Makiese Mukendi",
+            "gender": "Male",
+            "birthdate": "1978-11-22"
+          },
+          {
+            "name": "Mama Nzuzi Mukendi",
+            "gender": "Female",
+            "birthdate": "1982-07-14"
+          },
+          {
+            "name": "Junior Lukonde Mukendi",
+            "gender": "Male",
+            "birthdate": "2005-09-03"
+          },
+          {
+            "name": "Béatrice Tshala Mukendi",
+            "gender": "Female",
+            "birthdate": "2009-12-25"
+          }
+        ]
+      },
+      {
+        "familyName": "Kabasele",
+        "moveInDate": "2023-01-10",
+        "memberCount": 3,
+        "visitedByBishopric": false,
+        "members": [
+          {
+            "name": "Richard Tshibangu Kabasele",
+            "gender": "Male",
+            "birthdate": "1985-05-18"
+          },
+          {
+            "name": "Esther Mbombo Kabasele",
+            "gender": "Female",
+            "birthdate": "1989-02-28"
+          },
+          {
+            "name": "David Mbuyi Kabasele",
+            "gender": "Male",
+            "birthdate": "2015-08-07"
+          }
+        ]
+      },
+      {
+        "familyName": "Ilunga",
+        "moveInDate": "2021-11-30",
+        "memberCount": 5,
+        "visitedByBishopric": true,
+        "members": [
+          {
+            "name": "Gabriel Kasongo Ilunga",
+            "gender": "Male",
+            "birthdate": "1976-04-12"
+          },
+          {
+            "name": "Ruth Kabamba Ilunga",
+            "gender": "Female",
+            "birthdate": "1979-10-05"
+          },
+          {
+            "name": "Jonathan Mutombo Ilunga",
+            "gender": "Male",
+            "birthdate": "2002-07-19"
+          },
+          {
+            "name": "Sarah Kalala Ilunga",
+            "gender": "Female",
+            "birthdate": "2007-03-22"
+          },
+          {
+            "name": "Samuel Tshisekedi Ilunga",
+            "gender": "Male",
+            "birthdate": "2012-12-08"
+          }
+        ]
+      },
+      {
+        "familyName": "Nzeba",
+        "moveInDate": "2023-06-05",
+        "memberCount": 2,
+        "visitedByBishopric": false,
+        "members": [
+          {
+            "name": "Daniel Mbuyi Nzeba",
+            "gender": "Male",
+            "birthdate": "1990-09-17"
+          },
+          {
+            "name": "Rachel Mujinga Nzeba",
+            "gender": "Female",
+            "birthdate": "1993-01-24"
+          }
+        ]
+      },
+      {
+        "familyName": "Tshilombo",
+        "moveInDate": "2020-08-12",
+        "memberCount": 6,
+        "visitedByBishopric": true,
+        "members": [
+          {
+            "name": "Moïse Kalombo Tshilombo",
+            "gender": "Male",
+            "birthdate": "1972-12-03"
+          },
+          {
+            "name": "Deborah Mpoyi Tshilombo",
+            "gender": "Female",
+            "birthdate": "1975-06-15"
+          },
+          {
+            "name": "Josué Luboya Tshilombo",
+            "gender": "Male",
+            "birthdate": "1998-04-27"
+          },
+          {
+            "name": "Rebecca Kamwanya Tshilombo",
+            "gender": "Female",
+            "birthdate": "2001-02-14"
+          },
+          {
+            "name": "Timothée Mwamba Tshilombo",
+            "gender": "Male",
+            "birthdate": "2004-11-09"
+          },
+          {
+            "name": "Naomie Kabongo Tshilombo",
+            "gender": "Female",
+            "birthdate": "2010-07-30"
+          }
+        ]
+      }
+    ]
+  }
