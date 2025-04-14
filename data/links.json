@@ -1,0 +1,69 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "CSS Layout Review"
+          },
+          {
+            "url": "index.html",
+            "title": "Course Home Page"
+          },
+          {
+            "url": "week01/chamber-site-plan.html",
+            "title": "Chamber Site Plan"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "Web Design Principles"
+          },
+          {
+            "url": "week02/bom.html",
+            "title": "DOM Manipulation"
+          },
+          {
+            "url": "chamber/index.html",
+            "title": "Chamber Home Page"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "chamber/discover.html",
+            "title": "Chamber Discover Page"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "chamber/join.html",
+            "title": "Chamber Join Page"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/Madji-Dominique-Kayombo/pen/EaaYZwG",
+            "title": "Pseudo Class Demo"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "New Ward Members JSON"
+          }
+        ]
+      }
+    ]
+  }
