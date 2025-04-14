@@ -1,0 +1,112 @@
+
+@media (min-width: 700px) {
+    #cards.grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #cards.list-view .card {
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #cards.list-view .card img {
+        order: 0;
+        margin: 0;
+        max-width: 180px;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 900px) {
+    #cards.grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    #cards.grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+/* Responsive Layouts */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .weather-event {
+        flex-grow: 75;
+    }
+
+    .weather-current {
+        flex-grow: 25;
+    }
+
+    .spotlight {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .discover-container {
+        grid-template-columns: 300px 1fr;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .photo-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .photo-caption button:hover {
+        background-color: var(--accent-color-1);
+        color: var(--tertiary-color);
+    }
+}
+
+@media (min-width: 1024px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 590px) {
+
+    .photo-card:hover,
+    .photo-caption button:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .benefits {
+        margin-top: 20px;
+    }
+}
