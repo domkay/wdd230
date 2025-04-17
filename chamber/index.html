@@ -39,9 +39,15 @@
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js"></script>
 </head>
 
 <body>
+    <!-- banner -->
+    <div id="meet-banner" class="banner hidden">
+        <p>📢 Join us for our Chamber of Commerce Meet & Greet on <strong>Wednesday at 7:00 p.m.</strong>!</p>
+        <button id="close-banner" aria-label="Close banner">❌</button>
+      </div>
     <!-- Header -->
     <header>
         <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
@@ -82,15 +88,14 @@
                 </div>
             </div>
         </section>
-        <div class="business-spotlight">
-            <h2>Featured Businesses</h2>
-            <section class="spotlight">
-
-                <div id="spotlight-container">
-                    <!-- Dynamic content will be inserted here -->
-                </div>
-            </section>
-        </div>
+        <!-- Spotlight Section -->
+        <section class="spotlight">
+            <!-- <h2>Business Spotlights</h2> -->
+            <div id="spotlight-container">
+                <!-- Companies will be dynamically loaded here from members.json -->
+                <p>Loading spotlight businesses...</p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

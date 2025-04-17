@@ -8,7 +8,8 @@ async function fetchSpotlightMembers() {
 
     if (!data || data.length === 0) {
       console.error("No member data found.");
-      return; // Just return without showing any message
+      spotlightContainer.innerHTML = "<p>No spotlight businesses found.</p>";
+      return;
     }
 
     const eligibleMembers = data.filter(
@@ -16,48 +17,71 @@ async function fetchSpotlightMembers() {
     );
 
     if (eligibleMembers.length === 0) {
-      return; // Just return without showing any message
+      spotlightContainer.innerHTML =
+        "<p>No eligible spotlight businesses found.</p>";
+      return;
     }
 
-    // Select 3 random eligible members
     const spotlightMembers = [];
     while (spotlightMembers.length < 3 && eligibleMembers.length > 0) {
       const randomIndex = Math.floor(Math.random() * eligibleMembers.length);
       spotlightMembers.push(eligibleMembers.splice(randomIndex, 1)[0]);
     }
 
-    // Clear the container (which is already empty)
-    spotlightContainer.innerHTML = "";
+    if (spotlightMembers.length === 0) {
+      // If no members where eligible
+      spotlightContainer.innerHTML =
+        "<p>No eligible spotlight businesses found.</p>";
+      return;
+    }
 
-    // Create and append the member cards
+    spotlightContainer.innerHTML = ""; // Clear loading message
+
     spotlightMembers.forEach((member) => {
-      const card = document.createElement("div");
-      card.className = "card";
+      const memberCard = document.createElement("div");
+      memberCard.classList.add("spotlight-card");
 
-      card.innerHTML = `
-        <h2 class="act-title">${member.name}</h2>
-        <figure class="act-image">
-          <img src="images/${member.image}" alt="${member.name}" width="100" height="100" loading="lazy"
-               onerror="this.src='images/missing.png'">
-        </figure>
-        <address class="act-address">${member.address}</address>
-        <p class="act-description">${member.description}</p>
-        <button>Learn More...</button>
-      `;
+      // Add error handling for images
+      const img = document.createElement("img");
+      img.src = `images/${member.image}`;
+      img.dataset.src = `images/${member.image}`; // For lazy loading
+      img.alt = `${member.name} logo`; // More descriptive alt text
+      img.width = 100;
+      img.loading = "lazy";
 
-      const button = card.querySelector("button");
-      button.addEventListener("click", () => {
-        window.open(member.website, "_blank");
-      });
+      img.onerror = () => {
+        console.error(`Error loading image for ${member.name}`);
+        img.src = "images/missing.png"; // Or a default placeholder image
+      };
 
-      spotlightContainer.appendChild(card);
+      memberCard.innerHTML = `
+                <div class="member-info">
+                  <h3>${member.name}</h3>
+                  <p>${member.category}</p>
+                </div>
+                <div class="member-details">
+                  <div>
+                    ${img.outerHTML}
+                  </div>
+                  <div>
+                    
+                    <p>${member.address}</p>
+                    <p>Phone: ${member.phone}</p>
+                    <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+                  </div>
+                </div>
+                
+                
+            `;
+
+      spotlightContainer.appendChild(memberCard);
     });
-
   } catch (error) {
-    console.error("Error loading spotlight members:", error);
-    // Don't show any error message in the UI
+    console.error("Error fetching or displaying spotlight members:", error);
+    const spotlightContainer = document.getElementById("spotlight-container");
+    spotlightContainer.innerHTML =
+      "<p>Failed to load spotlight businesses. Please try again later.</p>";
   }
 }
 
-// Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", fetchSpotlightMembers);
+fetchSpotlightMembers();

@@ -46,21 +46,9 @@
         display: none;
     }
 
-    .spotlight {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .spotlight-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-
-    .spotlight-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
+    #spotlight-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .weather {
