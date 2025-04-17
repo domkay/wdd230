@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Kinshasa - Home</title>
-    <meta name="description"
-        content="Home page of the Commerce Chamber website, providing business listings and information.">
+    <meta name="description" content="Home page of the Commerce Chamber website, providing business listings and information.">
     <meta name="author" content="Madji Kayombo">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Chamber of Commerce of Kinshasa - Home">
-    <meta property="og:description"
-        content="Directory page for the Chamber ofCommerce website, providing business listings and information.">
+    <meta property="og:description" content="Directory page for the Chamber ofCommerce website, providing business listings and information.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.app.goo.gl/BF99UUyP23jQ1vQ5A">
     <meta property="og:url" content="https://domkay.github.io/wdd230/chamber/index.html">
@@ -21,16 +19,13 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="stylesheet" href="styles/headerfooter.css"> -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -39,20 +34,22 @@
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/banner.js"></script>
+    <script src="scripts/banner.js" defer></script>
 </head>
 
 <body>
-    <!-- banner -->
-    <div id="meet-banner" class="banner hidden">
-        <p>📢 Join us for our Chamber of Commerce Meet & Greet on <strong>Wednesday at 7:00 p.m.</strong>!</p>
+    <!-- Meet and Greet Banner -->
+    <aside id="meet-banner" class="meet-banner hidden" role="note">
+        <p>📢 Join us for a Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
         <button id="close-banner" aria-label="Close banner">❌</button>
-      </div>
+    </aside>
+
     <!-- Header -->
     <header>
         <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
         <h1>Kinshasa Chamber of Commerce</h1>
     </header>
+
     <a id="menu" href="#"></a>
     <nav class="navigation">
         <ul class="menuLinks_ul_">
@@ -62,12 +59,12 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <img src="images/hero_image-min.jpg" data-src="images/hero_image.jpg" alt="Kinshasa Cityscape"
-                class="hero-image lazyload" loading="lazy">
+            <img src="images/hero_image-min.jpg" data-src="images/hero_image.jpg" alt="Kinshasa Cityscape" class="hero-image lazyload" loading="lazy">
             <div class="hero-content">
                 <h2>Welcome to the Kinshasa Chamber of Commerce</h2>
                 <p>Your gateway to business opportunities and community growth.</p>
@@ -88,11 +85,10 @@
                 </div>
             </div>
         </section>
+
         <!-- Spotlight Section -->
         <section class="spotlight">
-            <!-- <h2>Business Spotlights</h2> -->
             <div id="spotlight-container">
-                <!-- Companies will be dynamically loaded here from members.json -->
                 <p>Loading spotlight businesses...</p>
             </div>
         </section>
@@ -109,21 +105,9 @@
         <section class="footer_social">
             <h3>Follow Us</h3>
             <ul>
-                <li>
-                    <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_youtube.png" alt="Youtube">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_twitter.png" alt="Twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_linkedin.png" alt="LinkedIn">
-                    </a>
-                </li>
+                <li><a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer"><img src="images/icon_youtube.png" alt="Youtube"></a></li>
+                <li><a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer"><img src="images/icon_linkedin.png" alt="LinkedIn"></a></li>
             </ul>
         </section>
         <section class="footer_about">
